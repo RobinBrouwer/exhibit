@@ -1,0 +1,3 @@
+class <%= class_name %>Presenter < Exhibit::Presenter
+  exhibit :<%= underscore %>
+end

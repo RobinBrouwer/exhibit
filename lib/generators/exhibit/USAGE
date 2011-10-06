@@ -1,0 +1,9 @@
+Description:
+    Generates a presenter for the exhibit gem.
+
+Example:
+    rails generate presenter User
+
+    This will create:
+        app/presenters
+        app/presenters/user_presenter.rb
