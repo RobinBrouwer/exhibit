@@ -2,7 +2,7 @@
 
 Exhibit is a simple gem to generate and work with presenters in Rails 3. It is based on the solution Ryan Bates created in [Railscasts Pro episode #287](http://railscasts.com/episodes/287-presenters-from-scratch).
 
-    version 0.1.1
+    version 0.1.2
     Robin Brouwer
     45north
 
@@ -44,7 +44,14 @@ You can also use `delegate` to delegate methods to the User Model.
       delegate :email, :to => :user
     end
 
-But how can you use this presenter inside the View? It works the same as Ryan shows you in [Railscasts Pro episode #287](http://railscasts.com/episodes/287-presenters-from-scratch):
+Want to add methods that can be used inside all of your presenters? Run the following command:
+
+    rails g exhibit:base
+
+A new initializer will be created: config/initializers/exhibit_presenter.rb.
+You can add methods to this class to extend it and use it inside all presenters.
+
+But how can you actually use presenters inside the view? It works the same as Ryan shows you in [Railscasts Pro episode #287](http://railscasts.com/episodes/287-presenters-from-scratch):
 
     <% exhibit(@user) do |user| %>
       <p>

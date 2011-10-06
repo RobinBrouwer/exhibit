@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    exhibit (0.1.1)
+    exhibit (0.1.2)
 
 GEM
   remote: http://rubygems.org/

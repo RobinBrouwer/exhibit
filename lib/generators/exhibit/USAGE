@@ -1,9 +1,13 @@
-Description:
-    Generates a presenter for the exhibit gem.
+Available generators:
+  exhibit:presenter
+  exhibit:base
 
-Example:
-    rails generate presenter User
-
-    This will create:
-        app/presenters
-        app/presenters/user_presenter.rb
+Examples:
+  rails g exhibit:presenter User
+  This will create:
+    app/presenters
+    app/presenters/user_presenter.rb
+  
+  rails g exhibit:base
+  This will create:
+    config/initializers/exhibit_presenter.rb
