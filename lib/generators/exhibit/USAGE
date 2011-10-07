@@ -1,5 +1,10 @@
 Available generators:
   exhibit:presenter
+    Options:
+      --rspec
+      --testunit
+      --no_namespace
+  
   exhibit:base
 
 Examples:
@@ -7,6 +12,7 @@ Examples:
   This will create:
     app/presenters
     app/presenters/user_presenter.rb
+    spec/presenters/user_presenter_spec.rb
   
   rails g exhibit:base
   This will create:

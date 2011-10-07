@@ -2,7 +2,7 @@
 
 Exhibit is a simple gem to generate and work with presenters in Rails 3. It is based on the solution Ryan Bates created in [Railscasts Pro episode #287](http://railscasts.com/episodes/287-presenters-from-scratch).
 
-    version 0.1.4
+    version 0.1.5
     Robin Brouwer
     45north
 
