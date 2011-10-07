@@ -27,7 +27,11 @@ module Exhibit
     end
     
     def exhibit_name
-      presenter_name.underscore.gsub('/', '_')
+      if options[:no_namespace]
+        presenter_name.underscore.split('/').last
+      else
+        presenter_name.underscore.gsub('/', '_')
+      end
     end
   end
 end
