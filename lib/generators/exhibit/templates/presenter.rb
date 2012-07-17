@@ -1,3 +1,3 @@
 class <%= class_name %>Presenter < Exhibit::Presenter
-  exhibit :<%= exhibit_name %>
+  exhibit :<%= singular_name %>
 end
